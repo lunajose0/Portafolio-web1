@@ -1,0 +1,324 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        
+        <!-- Loading Indicator -->
+        <div id="loading-indicator">
+            <div class="spinner"></div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <div class="logo">Portafolio</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <div class="nav-link" data-section="home">Inicio</div>
+                <div class="nav-link" data-section="about">Sobre mí</div>
+                <div class="nav-link" data-section="projects">Proyectos</div>
+                <div class="nav-link" data-section="experience">Experiencia</div>
+                <div class="nav-link" data-section="contact">Contacto</div>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="section">
+                <div class="section-container hero-container">
+                    <div class="hero-text">
+                        <h1 class="hero-title animate-on-scroll">Hola, soy <span class="highlight">Juan Pérez</span></h1>
+                        <p class="hero-subtitle animate-on-scroll">Desarrollador web full-stack apasionado por crear experiencias digitales impactantes.</p>
+                        <button class="hero-cta animate-on-scroll">Ver mis proyectos</button>
+                    </div>
+                    <div class="hero-image animate-on-scroll">
+                        <img src="./perfil/my_foto.jpg" alt="Foto de perfil" class="avatar rotating-circle">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="section-container about-container">
+                    <h2 class="section-title animate-on-scroll">Sobre mí</h2>
+                    <div class="about-content">
+                        <div class="about-text animate-on-scroll">
+                            <p>Soy un desarrollador web full-stack con experiencia en la creación de aplicaciones web modernas y responsivas. Mi pasión es construir soluciones digitales intuitivas y atractivas.</p>
+                            <p>He completado múltiples cursos y certificaciones que han fortalecido mis habilidades:</p>
+                            <ul class="certificates-list">
+                                <li>
+                                    <i class="fas fa-certificate"></i>
+                                    <div>
+                                        <h4>Programación para todos - Universidad de Michigan</h4>
+                                        <p>Coursera - 2023</p>
+                                        <a href="#" class="certificate-link" data-pdf="./pdf/Coursera Everybody.pdf">Ver certificado</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-certificate"></i>
+                                    <div>
+                                        <h4>Jóvenes a Programar</h4>
+                                        <p>Plan Ceibal - 2023</p>
+                                        <a href="#" class="certificate-link" data-pdf="./pdf/Certificado jóvenes a programar.pdf">Ver certificado</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-certificate"></i>
+                                    <div>
+                                        <h4>Python para todos - Universidad de Michigan</h4>
+                                        <p>Coursera - 2023</p>
+                                        <a href="#" class="certificate-link" data-pdf="./pdf/Coursera.pdf">Ver certificado</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cv-download">
+                                <a href="#" class="cv-button" data-pdf="./pdf/Curriculum2025.pdf">
+                                    <i class="fas fa-download"></i> Descargar CV
+                                </a>
+                            </div>
+                            <div class="skills-container">
+                                <h3 class="skills-title">Mis habilidades</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                        <div class="skill-name">HTML5</div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                        <div class="skill-name">CSS3</div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                        <div class="skill-name">JavaScript</div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                        <div class="skill-name">React</div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                        <div class="skill-name">Node.js</div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                        <div class="skill-name">Python</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-container projects-container">
+                    <h2 class="section-title animate-on-scroll">Mis Proyectos</h2>
+                    <div class="projects-grid">
+                        <div class="project-card animate-on-scroll">
+                            <div class="project-image">Proyecto 1</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Aplicación de Gestión de Tareas</h3>
+                                <p class="project-description">Una aplicación web para gestionar tareas diarias con autenticación de usuarios y almacenamiento en la nube.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card animate-on-scroll">
+                            <div class="project-image">Proyecto 2</div>
+                            <div class="project-info">
+                                <h3 class="project-title">E-commerce Store</h3>
+                                <p class="project-description">Tienda en línea completa con carrito de compras, pasarela de pagos y panel de administración.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Stripe</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card animate-on-scroll">
+                            <div class="project-image">Proyecto 3</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Aplicación de Clima</h3>
+                                <p class="project-description">Aplicación que muestra el clima actual y pronóstico para cualquier ubicación utilizando geolocalización.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">API</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div class="section-container">
+                    <h2 class="section-title animate-on-scroll">Experiencia</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2022 - Presente</div>
+                                <h3 class="timeline-role">Desarrollador Frontend Senior</h3>
+                                <div class="timeline-company">TechSolutions Inc.</div>
+                                <p class="timeline-description">Desarrollo de interfaces de usuario para aplicaciones web utilizando React, gestión de estado con Redux y optimización del rendimiento.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <h3 class="timeline-role">Desarrollador Web Full-Stack</h3>
+                                <div class="timeline-company">InnovateX</div>
+                                <p class="timeline-description">Desarrollo de aplicaciones web full-stack con MERN (MongoDB, Express, React, Node.js), implementación de APIs RESTful y gestión de bases de datos.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2018 - 2020</div>
+                                <h3 class="timeline-role">Desarrollador Frontend Junior</h3>
+                                <div class="timeline-company">WebCreative Studios</div>
+                                <p class="timeline-description">Desarrollo de interfaces de usuario y componentes web utilizando HTML, CSS y JavaScript. Colaboración en proyectos de diseño responsive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="section-container contact-container">
+                    <h2 class="section-title animate-on-scroll">Contacto</h2>
+                    <div class="contact-info">
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-type">Email</div>
+                                <div class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c1f1312081d1f08133c191619110c1013521f1311">[email&#160;protected]</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-type">Teléfono</div>
+                                <div class="contact-value">+598 99 123 456</div>
+                            </div>
+                        </div>
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-type">Ubicación</div>
+                                <div class="contact-value">Montevideo, Uruguay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <form class="contact-form animate-on-scroll">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" id="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea id="message" class="form-textarea" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3 class="footer-title">Portfolio</h3>
+                    <p>Desarrollo web moderno y efectivo adaptado a tus necesidades.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/lunajose0" class="footer-social-icon" target="_black"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jose-luna-br10/" class="footer-social-icon" target="_black"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Enlaces</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#home" data-section="home">Inicio</a></li>
+                        <li class="footer-link"><a href="#about" data-section="about">Sobre mí</a></li>
+                        <li class="footer-link"><a href="#projects" data-section="projects">Proyectos</a></li>
+                        <li class="footer-link"><a href="#contact" data-section="contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contacto</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ceada1a0baafadbaa18eaba4aba3bea2a1e0ada1a3">[email&#160;protected]</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Montevideo, Uruguay</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <iframe id="pdf-iframe" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app.js"></script>
+</body>
+</html>
